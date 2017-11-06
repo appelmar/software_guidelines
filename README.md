@@ -1,4 +1,4 @@
-# [openeo](http://openeo.org/) software guidelines
+# [openeo](http://openeo.org/) software development guidelines
 
 Edzer Pebesma, openeo team
 
