@@ -18,7 +18,7 @@ methods behind them.
 5. Sustainable code shall undergo [code review](#software-review);
 no direct commits to master; any commit shall come in the form of
 a PR, commit after review.
-6. Sustainable code shall be written in a [Test-driven manner](test-driven-development), and repositories shall ath the top of their `README.md` give indication of the degree to which code is covered by tests.
+6. Sustainable code shall be written in a [Test-driven manner](test-driven-development), and repositories shall at the top of their `README.md` give indication of the degree to which code is covered by tests.
 7. [Continuous integration](#continuous-integration) shall be used to indicate code currently passes its test on CI platforms
 8. A [Code of conduct](#contributor-code-of-conduct) describes the rules and constraints to developers and contributors.
 9. Version numbers of sustainable software releases shall follow [Semantic Versioning 2.0.0](http://semver.org).  
@@ -37,7 +37,7 @@ Software documentation shall include:
 * explain in detail the intention of the software
 * pointers to reference documents explaining overarching concepts 
 
-Each repository's `README.md` shall point to the documentation
+Each repository's `README.md` shall point to the documentation.
 
 ## Software review
 
