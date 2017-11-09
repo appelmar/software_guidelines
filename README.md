@@ -2,6 +2,8 @@
 
 Edzer Pebesma; openeo team
 
+Status of this repository: proof-of-concept
+
 This document describes guidelines for software developers, written
 for the [openEO](http://openeo.org) project.  Since the openEO
 infrastructure will encompasses several programming languages and
