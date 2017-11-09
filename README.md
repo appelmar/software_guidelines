@@ -1,22 +1,24 @@
-# [openeo](http://openeo.org/) software development guidelines
+# [openEO](http://openeo.org/) software development guidelines
 
-Edzer Pebesma, openeo team
+Edzer Pebesma; openeo team
 
-This document describes the guidelines for software developers,
-written for the [openeo](http://openeo.org) project.  Since the
-openeo encompasses several programming languages and environments,
-this document does not prescribe particular tools or platforms but
-instead the general principles and methods behind them.
+This document describes guidelines for software developers, written
+for the [openEO](http://openeo.org) project.  Since the openEO
+infrastructure will encompasses several programming languages and
+software environments, this document does not prescribe particular
+tools or platforms but rather focuses on general principles and
+methods behind them.
 
 1. License: all software developed in the openeo project and published on the [openeo github](http://github.com/open-eo/) organisation shall be licensed under the [Apache 2.0 license](LICENSE). If software repositories deviate from this, or contain code or other artifacts that deviates from this, this shall be described in the first paragraph of the `README.md` file.
-2. Proof-of-concept versus sustainable: each repository shall indicate whether it contains proof-of-concept code or sustainable code. Proof-of-concept code is meant to work but comes without any quality assurance whatsever. 
-3. Sustainable code should undergo standard [quality checks](#software-quality-guidelines), and point out its [documentation](#software-documentation-guidelines)
-4. Sustainable code shall undergo [code review](#software-review);
+2. Location: openEO software is developed under the [openEO Github organisation](https://github.com/open-EO/)
+3. Proof-of-concept versus sustainable: each repository shall indicate its status: either _proof-of-concept_, or _sustainable_. Proof-of-concept code is meant to work but comes without quality assurance. Software repositories with proof-of-concept developments shall clearly say so in the title and/or first paragraph of the README.md file.
+4. Sustainable code should undergo standard [quality checks](#software-quality-guidelines), and point out its [documentation](#software-documentation-guidelines)
+5. Sustainable code shall undergo [code review](#software-review);
 no direct commits to master; any commit shall come in the form of
 a PR, commit after review.
-5. Sustainable code shall be written in a [Test-driven manner](test-driven-development), and repositories shall ath the top of their `README.md` give indication of the degree to which code is covered by tests.
-6. [Continuous integration](#continuous-integration) shall be used to indicate code currently passes its test on CI platforms
-7. A [Code of conduct](#contributor-code-of-conduct) describes the rules and constraints to developers and contributors.
+6. Sustainable code shall be written in a [Test-driven manner](test-driven-development), and repositories shall ath the top of their `README.md` give indication of the degree to which code is covered by tests.
+7. [Continuous integration](#continuous-integration) shall be used to indicate code currently passes its test on CI platforms
+8. A [Code of conduct](#contributor-code-of-conduct) describes the rules and constraints to developers and contributors.
 
 
 ## Software quality guidelines
@@ -29,18 +31,20 @@ a PR, commit after review.
 
 Software documentation shall include:
 * installation instructions
-* usages instructions
+* usage instructions
 * explain in detail the intention of the software
-* each repository's `README.md` shall point to the documentation
+* pointers to reference documents explaining overarching concepts 
 
+Each repository's `README.md` shall point to the documentation
 
 ## Software review
 
-* sustainable software development shall take place by always having two persons involved in a change: one person makes a pull request, another person reviews the pull requests and merges it into the master branch.
-* software review discussions shall be intelligible for external developers, and serve as implicit documentation for development decisions taken
+* sustainable software development shall take place by always having two persons involved in a change to the master branch: individuals push to branches, pull request indicate readiness to be taken up in the master branch, a second developer reviews the pull request before merging it into the master branch.
+* software review discussions shall be intelligible for external developers, and serve as implicit documentation of development decisions taken
 
 ## Test-driven development
 
+Software shall be developed in a test-driven fashion, meaning that while the code is written, tests are developed that verify, to a reasonable extent, the correctness of the code. Tools such as [codecov.io](https://codecov.io/g) to automatically indicate the amount of code covered by tests, and code that is not covered by tests shall be used in combination with a continuous integration framework.
 
 ## Continuous integration
 
