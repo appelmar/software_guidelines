@@ -10,7 +10,7 @@ instead the general principles and methods behind them.
 
 1. License: all software developed in the openeo project and published on the [openeo github](http://github.com/open-eo/) organisation shall be licensed under the [Apache 2.0 license](LICENSE). If software repositories deviate from this, or contain code or other artifacts that deviates from this, this shall be described in the first paragraph of the `README.md` file.
 2. Proof-of-concept versus sustainable: each repository shall indicate whether it contains proof-of-concept code or sustainable code. Proof-of-concept code is meant to work but comes without any quality assurance whatsever. 
-3. Sustainable code should undergo standard [quality checks](#Software-quality-guidelines), and point out its [documentation](#Software-documentation-guidelines)
+3. Sustainable code should undergo standard [quality checks](#software-quality-guidelines), and point out its [documentation](#software-documentation-guidelines)
 4. Sustainable code shall undergo [code review](REVIEW.md);
 no direct commits to master; any commit shall come in the form of
 a PR, commit after review.
@@ -32,3 +32,5 @@ Software documentation shall include:
 * usages instructions
 * explain in detail the intention of the software
 * each repository's `README.md` shall point to the documentation
+
+
